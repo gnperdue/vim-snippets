@@ -38,6 +38,14 @@ snippet omp
 	#ifdef _OPENMP
 	#include <omp.h>
 	#endif
+# ifdef openmp
+snippet ifomp
+	#ifdef _OPENMP
+	#else
+	#endif
+# omp pragma
+snippet pragomp
+	#pragma omp parallel
 # ifndef...define...endif
 snippet ndef
 	#ifndef $1
