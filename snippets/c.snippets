@@ -33,6 +33,11 @@ snippet pthread
 # #include <semaphore.h>
 snippet semaphore
 	#include <semaphore.h>
+# #include <omp.h>
+snippet omp
+	#ifdef _OPENMP
+	#include <omp.h>
+	#endif
 # ifndef...define...endif
 snippet ndef
 	#ifndef $1
